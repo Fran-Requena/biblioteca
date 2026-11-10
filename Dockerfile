@@ -8,3 +8,4 @@ COPY . .
 RUN useradd --no-create-home biblio
 USER biblio
 EXPOSE 5000
+CMD ["gunicorn", "--blind", "0.0.0.0:5000", "--access-logfile", "-", "app:app"]
