@@ -19,10 +19,3 @@ docker-compose*.yml
 docs/
 README.md
 
-# Ficheros de desarrollo y CI: no hacen falta para ejecutar la app.
-tests/
-requirements-dev.txt
-pyproject.toml
-.github/
-.pytest_cache/
-.trivyignore
