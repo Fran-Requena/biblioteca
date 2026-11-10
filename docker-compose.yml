@@ -6,5 +6,5 @@ services:
       - "127.0.0.1:5000:5000"
     
     
-    DATABASE_URL: ${DATABASE_URL}
-    SECRET_KEY: ${SECRET_KEY}
+    DATABASE_URL: ${DATABASE_URL:?Define DATABASE_URL (conexión a RDS) en .env}
+    SECRET_KEY: ${SECRET_KEY:?Define SECRET_KEY en .env}
